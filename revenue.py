@@ -1,4 +1,4 @@
-def highest_revenue_item( data ) :
+def highest_revenue_item( data ):
 	count_dict = {}
 	price_dict = {}
 	

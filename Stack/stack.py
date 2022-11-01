@@ -29,17 +29,19 @@ class Stack:
         
     def peek(self):
         return self.stack[self.top]
-        
-        
-    def print_stack(self):
-        for i in range(len(self.stack)-1, -1):
-            print(self.stack[i])
-            
 
 
-stack = Stack(10)
-stack.push(1)
-stack.push(2)
-stack.push(3)
-stack.print_stack()
+    def __str__(self):
+        return str(self.stack)
+
+
+
+if __name__ == "__main__":
+    stack = Stack(10)
+    stack.push(1)
+    stack.push(2)
+    stack.push(3)
+    stack.push(12)
+    print(stack)
+
         
